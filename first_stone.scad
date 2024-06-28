@@ -1,12 +1,10 @@
-chunk_2();
-
-
-
+chunk_2 ();
 
 module chunk_2() {
     x = 7.327;
     y = 6.686;
     rot = -120;
+
 
     chunk_proto_2();
     translate([x-0.407, y+11.432, 0]) rotate([0, 0, rot+60]) chunk_1();
@@ -44,6 +42,8 @@ module chunk_proto_1() {
     y = 0;
     rot = 30;
     
+    s_factor = 0.4;
+
     color("red") scale([1, 1, 0.2]) translate([x, y, 0]) rotate([0, 0, rot])  spectre();
     color("blue") scale([1, 1, 0.2]) translate([x+0.228, y+2.592, 0]) rotate([0, 0, rot-30])  spectre();
     color("green") scale([1, 1, 0.2]) translate([x+1.728, y+4.726, 0]) rotate([0, 0, rot-60])  spectre();
@@ -52,7 +52,7 @@ module chunk_proto_1() {
     color("green") scale([1, 1, 0.2]) translate([x-0.637, y+4.092, 0]) rotate([0, 0, rot+120])  spectre();
     color("yellow") scale([1, 1, 0.2]) translate([x+0.862, y+4.958, 0]) rotate([0, 0, rot+60])  spectre();
     color("red") scale([1, 1, 0.2]) translate([x+1.728, y+6.458, 0]) rotate([0, 0, rot+0])  spectre();
-    // color("blue") scale([1, 1, 0.2]) translate([x+0.228, y+7.324, 0]) rotate([0, 0, rot+60])  spectre();
+    //color("blue") scale([1, 1, 0.2]) translate([x+0.228, y+7.324, 0]) rotate([0, 0, rot+60])  spectre();
 }
 
 
